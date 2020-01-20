@@ -92,7 +92,7 @@ hr {
 }
 
 blockquote {
-    border-left: 5px solid #42b983;
+    border-left: 5px solid rgb(161, 159, 159);
     padding: 1rem 0.8rem 0.2rem 0.8rem;
     color: #666;
     background-color: rgba(66, 185, 131, .1);
@@ -112,12 +112,22 @@ blockquote {
 }
 
 pre {
-    padding: 2.5rem 1.5rem 1.5rem 1.5rem !important;
+    /* padding: 1.5rem !important; */
+    padding: 1.5rem 1.5rem 1.5rem 3.3rem !important;
     margin: 1rem 0 !important;
     background: #272822;
     overflow: auto;
     border-radius: 0.35rem;
     tab-size: 4;
+}
+
+code {
+    padding: 1px 5px;
+    font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace;
+    /* font-size: 0.91rem; */
+    color: #e96900;
+    background-color: #f8f8f8;
+    border-radius: 2px;
 }
 
 .code-area::after {
@@ -130,11 +140,11 @@ pre {
     top: 0;
     left: 12px;
     margin-top: 12px;
-    -webkit-box-shadow: 20px 0 #ffbd2e, 40px 0 #27c93f;
-    box-shadow: 20px 0 #ffbd2e, 40px 0 #27c93f;
+    -webkit-box-shadow: 20px 0 #ffbd2e, 40px 0 #000;
+    box-shadow: 20px 0 #ffbd2e, 40px 0 #000;
 }
 
-code {
+/* code {
     padding: 1px 5px;
     top: 13px !important;
     font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace;
@@ -142,7 +152,7 @@ code {
     color: #e96900;
     background-color: #f8f8f8;
     border-radius: 2px;
-}
+} */
 
 .code_copy {
     position: absolute;
@@ -248,11 +258,11 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    background-image: linear-gradient(to right, #7b7c7a 0%, #282b29 100%);
 }
 
 .text-color {
-    color: #0f9d58 !important;
+    color: #282b29 !important;
 }
 
 .white-color {
@@ -264,7 +274,7 @@ mark {
     position: fixed;
     bottom: 0;
     z-index: 300;
-    background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    background: linear-gradient(to right, #565756 0%, #141414 100%);
     opacity: 0.8;
 }
 
@@ -1302,7 +1312,7 @@ thead {
 
 .chip-container .chip:hover {
     color: #fff;
-    background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%) !important;
+    background: linear-gradient(to right, #4cbf30 0%, #282b29 100%) !important;
 }
 
 .chip .tag-length {
@@ -1378,7 +1388,7 @@ thead {
     left: 18px;
     height: 100%;
     width: 4px;
-    background: #0f9d58;
+    background: #282b29;
 }
 
 @media only screen and (min-width: 900px) {
@@ -1614,8 +1624,8 @@ thead {
     margin: 0 0.5rem;
     padding: 0;
     color: #fff;
-    border: 1px solid #0f9d58;
-    background: radial-gradient(#4cbf30, #0f9d58);
+    border: 1px solid #070707;
+    background: radial-gradient(#474747, #0a0a0a);
     font-size: 0.9rem;
     border-radius: 50%;
     box-shadow: 0 4px 6px rgba(50, 50, 93, .21), 0 2px 3px rgba(0, 0, 0, .1);
@@ -1791,7 +1801,7 @@ thead {
 
 .other-skills .chip:hover {
     color: #fff;
-    background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    background: linear-gradient(to right, #4cbf30 0%, #282b29 100%);
     border: 1px solid #4cbf30;
     box-shadow: 0 5px 5px rgba(0, 0, 0, .25)
 }
